@@ -34,8 +34,19 @@ def main():
 
         Use the buttons below to explore two applications built using this data:
     """
-
-    st.title("💊 Pharmacoinformatics Database")
+    st.markdown(
+        """
+        <style>
+        .center-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    st.markdown('<div class="center-title">💊 Pharmacoinformatics Database</div> 💊', unsafe_allow_html=True)
     st.markdown(introduction)
 
     def explore_database():
